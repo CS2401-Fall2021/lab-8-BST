@@ -1,8 +1,8 @@
  public class Node {
-    public double data;
+    public char data;
     public Node left, right;
  
-  public  Node(double data){
+  public  Node(char data){
     this.data = data;
   }
  
