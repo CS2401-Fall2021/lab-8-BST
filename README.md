@@ -26,8 +26,8 @@ It's depth is only going to be 1.
  >       A
  >      / \
  >     A   A
- >    /\
- >   B  C
+ >        / \
+ >       B   C
 
 Would have depth 2.
 ## Part 3: Number of unique items (assuming we have a valid BST)
@@ -40,10 +40,10 @@ Will have only 1 unique item.
  >       A
  >      / \
  >     A   A
- >    /\
- >   B  B
+ >        / \
+ >       B   B
 
-Would have 3 unique items, even though B is present twice, since it is not identical to it's parent it counts a being 'unique'
+Would have 3 unique items, even though B is present twice, since it is not identical to it's parent, it counts a being 'unique' both times.
 
 ## Part 4: ShouldKeepTree
 In Main.java implement keepTree(Node root, int maxMistakes, double logFactor). It should return true only if both are true:
