@@ -8,10 +8,10 @@ Your job is the tree inspector. You want to enforce the following
 
 * You can allow *m* mistakes in a BST, but no more! Remember, BSTs have every node's left value less than or equal to the node's value, and the right value greater than or equal to. A mistake is if this is not the case.
 
-Furthermore, sometimes we get trees that look less like actual trees and more like linked lists. That's not great either! If our maximum tree depth in a tree that holds n items is more than 2*log(n), we didn't do a good enough job and need to toss out that tree.
+* Sometimes we get trees that look less like actual trees and more like linked lists. That's not great either! If our maximum tree depth in a tree that holds n items is more than k*log(n), we didn't do a good enough job and need to toss out that tree.
 
 ## Node Class
-We start each tree at a Node root. Node is defined in Node.java. While you may add fields, you cannot remove them if you wish the autograder to work properly.
+We start each tree at a Node root. Node is defined in Node.java. While you may add fields, you cannot remove them or change the exisiting constructor if you wish the autograder to work properly.
 
 ## Part 1: Number of Mistakes in a BST
 In Main.java implement numTreeMistakes(Node root), which counts how many mistakes appear in a tree that keep it from being a true BST. BSTs have every node's left value less than or equal to the node's value, and the right value greater than or equal to. A mistake is if this is not the case. If your root is null, we have no mistakes to report.

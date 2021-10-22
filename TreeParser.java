@@ -1,4 +1,6 @@
-public static class TreeParser {
+import java.util.Stack;
+
+public class TreeParser {
     // function to return the index of close parenthesis
  public  static int findIndex(String str, int si, int ei)
   {
@@ -41,7 +43,7 @@ public static class TreeParser {
       return null;
  
     // new root
-    Node root = newNode(str.charAt(si));
+    Node root = new Node(str.charAt(si));
     int index = -1;
  
     // if next char is '(' find the index of

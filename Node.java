@@ -1,4 +1,4 @@
- public class Node {
+public class Node {
     public char data;
     public Node left, right;
  
