@@ -10,7 +10,7 @@ public class Test {
     String[] inputs = line.split("-");
     int[] array;
     Node root = TreeParser.treeFromString(inputs[1], 0 ,inputs[1].length());
-    if(inputs[1].equals("null"){root=null;}
+    if(inputs[1].equals("null")){root=null;}
     if (inputs[0].equals("err")) {
       System.out.println("err:" + Main.numTreeMistakes(root));
     }
