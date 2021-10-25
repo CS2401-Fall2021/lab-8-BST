@@ -15,6 +15,14 @@ We start each tree at a Node root. Node is defined in Node.java. While you may a
 
 ## Part 1: Number of Mistakes in a BST
 In Main.java implement numTreeMistakes(Node root), which counts how many mistakes appear in a tree that keep it from being a true BST. BSTs have every node's left value less than or equal to the node's value, and the right value greater than or equal to. A mistake is if this is not the case. If your root is null, we have no mistakes to report.
+Furthermore if we have this example where our Node A is to the right, but is less than the root B, so it is in the incorrect location. 
+>       B
+>      / \
+>     B   B
+>        / \
+>       A   C
+
+This means we can't just check the left and right values relative to its parent. We need something extra to check, perhaps a range of values it can be. 
 
 ## Part 2: Max depth
 In Main.java implement ma(Node root). However we don't want to count duplicates! If we have the following tree:

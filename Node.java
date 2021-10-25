@@ -1,8 +1,8 @@
 public class Node {
-    public String data;
+    public char data;
     public Node left, right;
  
-  public  Node(String data){
+  public  Node(char data){
     this.data = data;
   }
  
