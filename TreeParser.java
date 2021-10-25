@@ -43,7 +43,7 @@ public class TreeParser {
       return null;
  
     // new root
-    Node root = new Node(str.charAt(si));
+    Node root = new Node(String.valueOf(str.charAt(si)));
     int index = -1;
  
     // if next char is '(' find the index of

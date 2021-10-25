@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    String treeString="D(D(C)(A))(D(E))";
+    String treeString="D(C(C)(C))(D(A))";
     Node root = TreeParser.treeFromString(treeString,0,treeString.length()-1);
     System.out.println("Mistakes should be 2, but is:"+numTreeMistakes(root));
     System.out.println("Depth should be 2, but is:"+treeDepth(root));
