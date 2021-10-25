@@ -32,6 +32,8 @@ This means we can't just check the left and right values relative to its parent.
 Another way of viewing the mistake count is determining how many nodes wouldn't we be able to find using the standard BST algorithm. 
 
 
+*Important:* There may be duplicates. In this lab we will permit identical values on either the Left or the right and not have it be considered "incorrect". 
+
 ## Part 2: Max depth
 In Main.java implement ma(Node root). However we don't want to count duplicates! If we have the following tree:
  >       A
