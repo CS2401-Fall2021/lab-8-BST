@@ -1,0 +1,10 @@
+Question 1: Can a parent node have children of the same value and still be correct? 
+
+Question 2: Could you have a tree where every left child is less than its parent and every right child is greater than the parent and still not have a valid BST?
+
+Question 3: In the best case scenario, how many levels of the tree would you need to fit 31 values?
+
+Question 4: In the worst case scenario, how many levels of the tree would you need to fit 31 values?
+
+Question 5: If there are duplicates IN THIS LAB, where should they go relative to the parent node?
+
