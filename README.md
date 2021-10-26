@@ -32,7 +32,7 @@ This means we can't just check the left and right values relative to its parent.
 Another way of viewing the mistake count is determining how many nodes wouldn't we be able to find using the standard BST algorithm. 
 
 
-*Important:* There may be duplicates, which should only occur on the right. If a left node is the same as the root then that is an error. 
+*Important:* There may be duplicates, which should only occur ONLY ON THE RIGHT. If a left node is the same as the root then that is an error. 
 
 ## Part 2: Max depth
 In Main.java implement ma(Node root). However we don't want to count duplicates! If we have the following tree:
