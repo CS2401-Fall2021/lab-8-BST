@@ -22,7 +22,7 @@ If your root is null, we have no mistakes to report.
 Note that we have this example where our Node A is to the right, but is less than the root B, so it is in the incorrect location. 
 >       B
 >      / \
->     B   B
+>     A   B
 >        / \
 >       A   C
 
@@ -32,7 +32,7 @@ This means we can't just check the left and right values relative to its parent.
 Another way of viewing the mistake count is determining how many nodes wouldn't we be able to find using the standard BST algorithm. 
 
 
-*Important:* There may be duplicates. In this lab we will permit identical values on either the Left or the right and not have it be considered "incorrect". 
+*Important:* There may be duplicates, which should only occur on the right. If a left node is the same as the root then that is an error. 
 
 ## Part 2: Max depth
 In Main.java implement ma(Node root). However we don't want to count duplicates! If we have the following tree:
