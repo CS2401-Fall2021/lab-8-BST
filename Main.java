@@ -14,8 +14,8 @@ public class Main {
     return -1;
   }
 
-  // Part 2: Calculate the maximum depth of the tree
-  public static int treeDepth(Node root){
+  // Part 2: Calculates the height of the tree
+  public static int treeHeight(Node root){
     return -1;
   }
   // Part 3: Calculate the number of unique values in the tree
