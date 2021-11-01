@@ -8,7 +8,7 @@ Your job is the tree inspector. You want to enforce the following
 
 * You can allow *m* mistakes in a BST, but no more! Remember, BSTs have every node's left value less than or equal to the node's value, and the right value greater than or equal to. A mistake is if this is not the case.
 
-* Sometimes we get trees that look less like actual trees and more like linked lists. That's not great either! If our maximum tree depth in a tree that holds n items is more than k*log(n), we didn't do a good enough job and need to toss out that tree.
+* Sometimes we get trees that look less like actual trees and more like linked lists. That's not great either! If our maximum tree hegiht in a tree that holds n items is more than k*log(n), we didn't do a good enough job and need to toss out that tree.
 
 ## Node Class
 We start each tree at a Node root. Node is defined in Node.java. While you may add fields, you cannot remove them or change the exisiting constructor if you wish the autograder to work properly.
@@ -34,20 +34,20 @@ Another way of viewing the mistake count is determining how many nodes wouldn't 
 
 *Important:* There may be duplicates, which should only occur ONLY ON THE RIGHT. If a left node is the same as the root then that is an error. 
 
-## Part 2: Max depth (20 pts code, ~10 lines of code)
-In Main.java implement treeDepth(Node root). However we don't want to count duplicates! If we have the following tree:
+## Part 2: Max height (20 pts code, ~10 lines of code)
+In Main.java implement treeHeight(Node root). However we don't want to count duplicates! If we have the following tree:
  >       A
  >      / \
  >     A   A
 
-It's depth is only going to be 0 (aka we only count the root, which starts at depth 0).
+It's height is only going to be 0 (aka we only count the root, which has height 0).
  >       A
  >      / \
  >     A   A
  >        / \
  >       B   C
 
-Would have depth 1.
+Would have height 1.
 
 
 ## IF YOU DO NOT FINISH PART 2 BY END OF CLASS TUESDAY YOU ARE NOT ON TRACK TO COMPLETE THE LAB AND SHOULD COME TO OFFICE HOURS
@@ -71,7 +71,7 @@ Would have 3 unique items, even though B is present twice, since it is not ident
 ## Part 4: ShouldKeepTree (10 pts code, ~3 line of code)
 In Main.java implement keepTree(Node root, int maxMistakes, double logFactor). It should return true only if both are true:
 * Number of Mistakes is less than or equal to maxMistakes
-* MaxDepth is less than logFactor * Number of unique items
+* MaxHeight is less than logFactor * Number of unique items
 
 ## Part 5: Tests (20 pts)
 Let's make sure our methods 1-4 work! Remember to include
