@@ -1,10 +1,10 @@
 public class Main {
   public static void main(String[] args) {
-    String treeString="D(B(A(G(H)))(D))(D(D(D(D(D(D(D)))))))";
+    String treeString="D(A(C)(A))(D(B))";
     Node root = TreeParser.treeFromString(treeString,0,treeString.length()-1);
     System.out.println("Mistakes should be 2, but is:"+numTreeMistakes(root));
-    System.out.println("Depth should be 5, but is:"+treeDepth(root));
-    System.out.println("Items should be 6, but is:"+treeItems(root));
+    System.out.println("Depth should be 3, but is:"+treeDepth(root));
+    System.out.println("Items should be 4, but is:"+treeItems(root));
     System.out.println("KeepTree should be true, but is:"+keepTree(root,2,3));
   }
 
