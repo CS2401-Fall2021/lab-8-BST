@@ -35,7 +35,7 @@ Another way of viewing the mistake count is determining how many nodes wouldn't 
 *Important:* There may be duplicates, which should only occur ONLY ON THE RIGHT. If a left node is the same as the root then that is an error. 
 
 ## Part 2: Max depth (20 pts code, ~10 lines of code)
-In Main.java implement ma(Node root). However we don't want to count duplicates! If we have the following tree:
+In Main.java implement treeDepth(Node root). However we don't want to count duplicates! If we have the following tree:
  >       A
  >      / \
  >     A   A
@@ -54,7 +54,7 @@ Would have depth 2.
 
 
 ## Part 3: Number of "unique" items (20 pts code, ~10 lines of code)
-In Main.java implement treeDepth(Node root). However we don't want to count duplicates! If we have the following tree:
+In Main.java implement treeItems(Node root). However we don't want to count duplicates! If we have the following tree:
  >       A
  >      / \
  >     A   A
