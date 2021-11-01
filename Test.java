@@ -15,7 +15,7 @@ public class Test {
       System.out.println("err:" + Main.numTreeMistakes(root));
     }
     if (inputs[0].equals("depth")) {
-      System.out.println("depth:" + Main.treeDepth(root));
+      System.out.println("depth:" + Main.treeHeight(root));
     }
     if (inputs[0].equals("items")) {
       System.out.println("items:" + Main.treeItems(root));
