@@ -40,14 +40,14 @@ In Main.java implement treeDepth(Node root). However we don't want to count dupl
  >      / \
  >     A   A
 
-It's depth is only going to be 1.
+It's depth is only going to be 0 (aka we only count the root, which starts at depth 0).
  >       A
  >      / \
  >     A   A
  >        / \
  >       B   C
 
-Would have depth 2.
+Would have depth 1.
 
 
 ## IF YOU DO NOT FINISH PART 2 BY END OF CLASS TUESDAY YOU ARE NOT ON TRACK TO COMPLETE THE LAB AND SHOULD COME TO OFFICE HOURS
