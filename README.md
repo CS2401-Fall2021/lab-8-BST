@@ -14,12 +14,12 @@ Your job is the tree inspector. You want to enforce the following
 We start each tree at a Node root. Node is defined in Node.java. While you may add fields, you cannot remove them or change the exisiting constructor if you wish the autograder to work properly.
 
 ## Part 1: Number of Mistakes in a BST (20 pts code, 10 pts reflections, ~10 lines of code)
-In Main.java implement numTreeMistakes(Node root), which counts how many mistakes appear in a tree that keep it from being a true BST. BSTs have every node's left value less than or equal to the node's value, and the right value greater than or equal to. A mistake is if this is not the case.
+In Main.java implement numTreeMistakes(Node root), which counts how many mistakes appear in a tree that keep it from being a true BST. BSTs have every node's left value less than the node's value, and the right value greater than or equal to. A mistake is if this is not the case.
 
 If your root is null, we have no mistakes to report.
 
 
-Note that we have this example where our Node A is to the right, but is less than the root B, so it is in the incorrect location. 
+Note that we have this example where our Node A is to the right of our root, but is less than the root B, so it is in the incorrect location. 
 >       B
 >      / \
 >     A   B
