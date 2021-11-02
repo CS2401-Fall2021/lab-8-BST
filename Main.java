@@ -4,7 +4,7 @@ public class Main {
     Node root = TreeParser.treeFromString(treeString,0,treeString.length()-1);
     root.print();
     System.out.println("Mistakes should be 2, but is:"+numTreeMistakes(root));
-    System.out.println("Depth should be 3, but is:"+treeDepth(root));
+    System.out.println("Height should be 2, but is:"+treeHeight(root));
     System.out.println("Items should be 4, but is:"+treeItems(root));
     System.out.println("KeepTree should be true, but is:"+keepTree(root,2,3));
   }
